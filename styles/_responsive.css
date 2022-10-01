@@ -1,0 +1,379 @@
+@media screen and (max-width: 600px){
+
+    h1.name {
+        margin-top: 55px;
+    }
+    .main-title{
+        margin-top: 80px;
+
+    }
+    .main-title .bg-text{
+        font-size: 40px;
+    }
+    .main-title h2{
+        font-size: 40px;
+    }
+    .theme-btn{
+        
+        width: 50px;
+        height: 50px;
+        margin-top: 800px;
+    }
+
+    header{
+
+        padding: 0;
+    }
+    header .right-header{
+        padding: 0 !important;
+    }
+    .header-content {
+        height: 905px;
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+    .left-header .h-shape{
+        display: none;
+    }
+    .right-header{
+        grid-row: 1;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header-content .left-header .image{
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+    .about-container .right-about{
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+    }
+    .about-container .left-about{
+        padding-right: 0;
+    }
+    .left-about p{
+        padding-left: 0;
+    }
+
+    .about-stats .progress-bars{
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: -40px;
+    }
+
+    ._projects {
+        display: inline-block;
+        margin-left: -60px;
+    }
+    ._blogs{
+        display: inline-block;
+    }
+    .blog{
+        margin: 25px;
+    }
+
+    .contact-content-con{
+        flex-direction: column;
+    }
+    .left-contact h4 {
+        text-align: center;
+        margin-top: -40px;
+    }
+
+    .contact-content-con .right-contact{
+        flex: 3;
+        margin-left: 0;
+    }
+    .contact-icons {
+        padding: 10px;
+    }
+    .contact-icon {
+        padding-left: 45px;
+    }
+    .contact-icon {
+        margin-left: 40px;
+    }
+    .contact-content-con .right-contact .control-input-2{
+        flex-direction: column;
+    }
+    .contact-content-con .right-contact .control-input-2:last-child{
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+    .right-contact .f-name {
+        margin-bottom: 20px;
+    }
+    .submit-button {
+        margin-left: 310px;
+    }
+.timeline{
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+}
+
+    .section{
+        padding: 2rem 2.5rem !important;
+    }
+    .controls {
+    top: 0;
+    bottom: auto;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-black);
+}
+    .control{
+        margin: 1rem .6rem;
+    }
+}
+
+@media screen and (max-width:1432px){
+    h1.name {
+        margin-top: 55px;
+    }
+    .main-title{
+        margin-top: 80px;
+
+    }
+    .main-title .bg-text{
+        font-size: 40px;
+    }
+    .main-title h2{
+        font-size: 40px;
+    }
+    .container{
+        padding: 7rem 11rem;
+    }
+
+    .contact-content-con{
+        flex-direction: column; 
+    }
+    .contact-content-con .right-contact{
+        margin-left: 0;
+        margin-top: 2.5rem;
+    }
+    .contact-content-con .right-contact .i-c-2{
+        flex-direction: column;
+    }
+    .contact-content-con .right-contact .i-c-2 :last-child{
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .contact-content-con .right-contact{
+        margin-bottom: 6rem;
+    }    
+}
+
+@media screen and (max-width:1250px){
+    ._blogs{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 6rem;
+    }
+    ._projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-content .right-header{
+        padding-right: 9rem;
+    }
+
+}
+@media screen and (max-width:1070px){
+    .about-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-container .right-about{
+        padding-top: 2.5rem;
+    }
+    
+}
+
+
+@media screen and (max-width:970px){
+    .container{
+        padding: 7rem 6rem;
+    }
+    .about-container .left-about{
+        padding-right: 0rem;
+    }
+    .header-content{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+
+    .left-header .h-shape{
+        display: none;
+    }
+        
+    .left-header image{
+        width: 90% !important;
+        margin: 0 auto !important;
+        
+    }
+    }
+    .right-header{
+        grid-row: 1;
+        padding-right: 0rem !important;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .right-header  .name{
+        font-size: 2.5rem !important;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    @media screen and (max-width:700px){
+        .container{
+            padding: 7rem 3rem;
+        }
+        .about-stats .progress-bars{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .about-container .right-about{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .timeline{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (max-width:660px){
+        h1.name {
+            margin-top: 55px;
+        }
+        .main-title{
+            margin-top: 80px;
+    
+        }
+        .main-title .bg-text{
+            font-size: 40px;
+        }
+        .main-title h2{
+            font-size: 40px;
+        }
+        .theme-btn{
+            width: 50px;
+            height: 50px;
+            margin-top: 800px;
+        }
+    
+        header{
+    
+            padding: 0;
+        }
+        header .right-header{
+            padding: 0 !important;
+        }
+        .header-content {
+            height: 905px;
+            grid-template-columns: 1fr;
+            padding-bottom: 6rem;
+        }
+        .left-header .h-shape{
+            display: none;
+        }
+        .right-header{
+            grid-row: 1;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .header-content .left-header .image{
+            margin: 0 auto;
+            width: 85%;
+        }
+    
+        .about-container{
+            grid-template-columns: 1fr;
+        }
+        .about-container .right-about{
+            grid-template-columns: 1fr;
+            padding-top: 2rem;
+        }
+        .about-container .left-about{
+            padding-right: 0;
+        }
+        .left-about p{
+            padding-left: 0;
+        }
+    
+        .about-stats .progress-bars{
+            grid-template-columns: 1fr;
+            width: 100%;
+            margin-left: -40px;
+        }
+    
+        ._projects {
+            display: inline-block;
+            margin-left: -10px;
+        }
+        ._blogs{
+            display: inline-block;
+        }
+        .blog{
+            margin: 25px;
+        }
+    
+        .contact-content-con{
+            flex-direction: column;
+        }
+        .left-contact h4 {
+            text-align: center;
+            margin-top: -40px;
+        }
+    
+        .contact-content-con .right-contact{
+            flex: 3;
+            margin-left: 0;
+        }
+        .contact-icons {
+            padding: 10px;
+        }
+        .contact-icon {
+            padding-left: 45px;
+        }
+        .contact-icon {
+            margin-left: 40px;
+        }
+        .contact-content-con .right-contact .control-input-2{
+            flex-direction: column;
+        }
+        .contact-content-con .right-contact .control-input-2:last-child{
+            margin-left: 0;
+            margin-top: 1.5rem;
+        }
+        .right-contact .f-name {
+            margin-bottom: 20px;
+        }
+        .submit-button {
+            margin-left: 310px;
+        }
+    .timeline{
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+    
+        .section{
+            padding: 2rem 2.5rem !important;
+        }
+        .controls {
+        top: 0;
+        bottom: auto;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-black);
+    }
+        .control{
+            margin: 1rem .6rem;
+        }
+    }
+    

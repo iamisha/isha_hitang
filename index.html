@@ -2,200 +2,514 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ishahitang_portfolio</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/_responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    
-<!-- header section starts  -->
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/my_img.png" alt="" width="100px" height="100px">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, It's me <span>Isha Hitang.</span>
+                </h1>
+                <p>
+                    A Software Engineering Student and a front-end web developer. Also interested in data science.
+                </p>
+                <div class="btn-con">
+                <a href="#" class="main-btn">
+                    <span class="btn-text">Download CV</span>
+                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                </a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>
+                    ABOUT <span>ME</span>
+                    <span class="bg-text">my-status</span>
+                </h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information about me</h4>
+                    <p>Hi, It&#39;s me Isha Hitang. I am a web developer and a
+                        creative engineering student who loves to explore and create
+                        new things related to the field. At present, i am probing in
+                        the field of data science. Currently inspecting my actual
+                        happiness in the field of software. I believe that finding
+                        your true happiness will reach you to the victory of your
+                        givings, No matter how critical the situation will be...</p>
+                    <p>-Dream is something you are free to choose, Dream is
+                        someting you are free to imagine, Dream is something that
+                        motivates you wake up early in the morning, Dream is
+                        something that you can follow...
+                <div class="abt-btn-icon">
+                    <a href="#" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">
+                                Project1
+                            </p>
+                            <p class="small-text">
+                                coming <br/>soon...
+                            </p>
+                        </div>
+                    </div>
 
-<header>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">
+                                Project2
+                            </p>
+                            <p class="small-text">
+                                coming <br/>soon...
+                            </p>
+                        </div>
+                    </div>
 
-    <div class="user">
-        <img src="images/my_img.png" alt="">
-        <h3 class="name">Isha Hitang</h3>
-        <p class="post">front end developer</p>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">
+                                Project3
+                            </p>
+                            <p class="small-text">
+                                coming <br/>soon...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">
+                                Project4
+                            </p>
+                            <p class="small-text">
+                                coming <br/>soon...
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-titile">Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <div class="prog-title">HTML</div>
+                          <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="prog-title">SCSS</div>
+                          <div class="progress-con">
+                            <p class="prog-text">67%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="prog-title">JS</div>
+                          <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="javascript"></span>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="prog-title">PHP/MYSQL</div>
+                          <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="php-mysql"></span>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="prog-title">PYTHON</div>
+                          <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="prog-title">C/C++</div>
+                          <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="c-cplus"></span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-titile">My timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline-duration">2068 - 2074</p>
+                    <h5> Jana Jyoti S.S <span> - middle school diploma</span></h5>
+                    <p>At Jana Jyoti Secondary School, Tilottama-4, Rupandehi-Nepal.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline-duration">2075 - 2077</p>
+                    <h5> Tilottama H.S.S <span> - high school diploma</span></h5>
+                    <p>At Tilottama Higher Secondary School, Tilottama-2, Rupandehi-Nepal.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline-duration">2078 - present</p>
+                    <h5>NCIT<span> - software Engineering Student</span></h5>
+                    <p>At Nepal college Of Information Technology, Balkuamri-Lalitpur, Kathmandu, Nepal</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="timeline-duration">coming years</p>
+                    <h5>Internships <span> - coming soon...</span></h5>
+                    <p>...</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="section sec3 projects" id="projects">
+            <div class="main-title">
+                <h2>My <span>Projects</span><span class="bg-text">My work</span></h2>
+            </div>
+            <p class="project-text">
+                Here is some of my projects that i have done using various programming language and will also contain my all future projects...
+            </p>
+            <div class="_projects">
+                <div class="projects-item">
+                    <div class="image">
+                        <img src="img/girl5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>coming soon...</h3>
+                        <div class="icons">
+                            <a href="#" target="_blank" class="icon git-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon lin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon y-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-item">
+                    <div class="image">
+                        <img src="img/girl5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>coming soon...</h3>
+                        <div class="icons">
+                            <a href="#" target="_blank" class="icon git-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon lin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon y-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-item">
+                    <div class="image">
+                        <img src="img/girl5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>coming soon...</h3>
+                        <div class="icons">
+                            <a href="#" target="_blank" class="icon git-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon lin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon y-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-item">
+                    <div class="image">
+                        <img src="img/girl5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>coming soon...</h3>
+                        <div class="icons">
+                            <a href="#" target="_blank" class="icon git-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon lin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon y-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-item">
+                    <div class="image">
+                        <img src="img/girl5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>coming soon...</h3>
+                        <div class="icons">
+                            <a href="#" target="_blank" class="icon git-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon lin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon y-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-item">
+                    <div class="image">
+                        <img src="img/girl5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>coming soon...</h3>
+                        <div class="icons">
+                            <a href="#" target="_blank" class="icon git-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon lin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="#" target="_blank" class="icon y-icon">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sec4 " id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Blogs</span><div class="bg-text">My Blogs</div></h2>
+                </div>
+                <div class="_blogs">
+                    <div class="blog">
+                        <img src="img/girl4.jpg" alt="">
+                        <div class="blog-text">
+                           <h4>How to start programming for the first time...</h4> 
+                           <p>One of ways I learn best is by doing. I literally decide on a topic I think I know something about, and I drill down in a spiral loop through things I didn’t know, or I didn’t even think about.</p>
+                        </div>
+                    </div>
+
+                    <div class="blog">
+                        <img src="img/girl4.jpg" alt="">
+                        <div class="blog-text">
+                           <h4>My first coding...</h4> 
+                           <p>It’s 1 or 0. There’s no “almost there”–you either get the correct or incorrect result. That seeing-through mentality sharpens how you approach a real problem.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section sec5 contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><div class="bg-text">Contact</div></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>contact me here
+                            <p><i class="fas fa-smile" aria-hidden="true" style="font-size: 30px; color: var(--color-white);"></i></p>
+                        </h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat illo impedit ipsam eaque quos </p>
+                        <div class="contact-info">
+                            <div class="contacts-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Location
+                                </div>
+                                <p>
+                                    : Kathmandu, Nepal
+                                </p>
+                            </div>
+
+                            <div class="contacts-item">
+                                <div class="icon">
+                                    <i class="fas fa-book-reader"></i>
+                                    Education
+                                </div>
+                                <p>
+                                    : NCIT
+                                </p>
+                            </div>
+
+                            <div class="contacts-item">
+                                <div class="icon">
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    Mobile Number
+                                </div>
+                                <p>
+                                    : +977 9827454638
+                                </p>
+                            </div>
+
+                            <div class="contacts-item">
+                                <div class="icon">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    Email
+                                </div>
+                                <p>
+                                    : isha09@gmail.com
+                                </p>
+                            </div>
+
+                            <div class="contacts-item">
+                                <div class="icon">
+                                    <i class="fa fa-language" aria-hidden="true"></i>
+                                    language
+                                </div>
+                                <p>
+                                    : Nepali, English, hindi
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://www.github.com/iamisha" target="_blank">
+                                    <i class="fab fa-github g-icon"></i>
+                                </a>
+                                <a href="https://www.facebook.com/isha.hitang.5" target="_blank">
+                                    <i class="fab fa-facebook fa-icon"></i>
+                                </a>
+                                <a href="https://www.instagram.com/isha_hitang/" target="_blank">
+                                    <i class="fab fa-instagram insta-icon"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/isha-hitang-bb3673252/" target="_blank">
+                                    <i class="fab fa-linkedin lin-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="form-contact">
+                            <div class="control-input control-input-2">
+                                <div class="f-name">
+                                    <input type="text" required  placeholder="TYPE YOUR FULL NAME">
+                                </div>
+                                <input type="text" required  placeholder="TYPE YOUR FULL EMAIL">
+                            </div>
+
+                            <div class="control-input">
+                                <input type="text" required  placeholder="ENTER SUBJECT">
+                            </div>
+
+                            <div class="control-input">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="type something..."></textarea>
+                            </div>
+                            <div class="submit-button">
+                                <a href="#" class="main-btn">
+                                    <span class="btn-text">Submit</span>
+                                    <span class="btn-icon"><i class="fa fa-eye"></i></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="projects">
+            <i class="fa fa-laptop"></i>
+        </div>
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
     </div>
-
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#contact">contact</a></li>
-            <li><a href="#extra">Extra</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<!-- header section ends -->
-
-<!-- content section starts  -->
-
-<div class="container">
-
-    <section class="home" id="home">
-
-        <h3>hi there...</h3>
-        <h3 class="name">my name is <span>Isha Hitang</span></h3>
-        <h3 class="post">i am a <span class="typing-text">front end developer</span></h3>
-
-        <a href="#contact"><button class="btn">hire me</button></a>
-
-        <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-github"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-        </div>
-
-    </section>
-
-    <!-- about section  -->
-
-    <section class="about" id="about">
-
-        <h1 class="heading">about me</h1>
-
-        <div class="content">
-            <h3 class="name">Hello and Namaste!<span>Isha Hitang here,</span></h3>
-            <p>Hi, It&#39;s me Isha Hitang. I am a web developer and a
-                creative engineering student who loves to explore and create
-                new things related to the field. At present, i am probing in
-                the field of data science. Currently inspecting my actual
-                happiness in the field of software. I believe that finding
-                your true happiness will reach you to the victory of your
-                givings, No matter how critical the situation will be...</p>
-            <p>-Dream is something you are free to choose, Dream is
-                someting you are free to imagine, Dream is something that
-                motivates you wake up early in the morning, Dream is
-                something that you can follow. <cite>-By Isha Hitang.</cite></p>
-        </div>
-
-        <div class="skills">
-            <div class="progress">
-                <h3>html and css <span>95%</span></h3>
-                <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-                <h3>javascript <span>65%</span></h3>
-                <div class="bar"><span></span></div>
-            </div>
-            <div class="progress">
-                <h3>PHP and MYSQL<span>70%</span></h3>
-                <div class="bar"><span></span></div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- project section  -->
-    <section class="project" id="project">
-
-        <h1 class="heading">My projects</h1>
-
-        <div class="box-container">
-
-            <div class="box">
-                <i class="fab fa-html5"></i>
-                <p>coming soon!!!...</p>
-            </div>
-
-            <div class="box">
-                <i class="fab fa-css3"></i>
-                <p>coming soon!!!...</p>
-            </div>
-
-            <div class="box">
-                <i class="fab fa-js"></i>
-                <p>coming soon!!!....</p>
-            </div>
-
-            <div class="box">
-                <i class="fab fa-wordpress"></i>
-                <p>coming soon!!!....</p>
-            </div>
-        </div>
-
-    </section>
-
-   
-
-    <!-- contact section  -->
-    <section class="contact" id="contact">
-
-        <h1 class="heading">contact me</h1>
-
-        <div class="row">
-
-            <form action="">
-                <input type="text" class="box" placeholder="first name">
-                <input type="text" class="box" placeholder="last name">
-                <input type="email" class="box" placeholder="your email">
-                <input type="text" class="box" placeholder="your project">
-                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-                <input type="submit" value="message" class="btn">
-            </form>
-
-            <div class="content">
-                <div class="icons">
-                    <h3><i class="fas fa-map-marker-alt"></i> address </h3>
-                    <p>Kathmandu, Nepal</p>
-                </div>
-                <div class="icons">
-                    <h3><i class="fas fa-envelope"></i> email </h3>
-                    <p>codewithisha@gmail.com</p>
-                </div>
-                <div class="icons">
-                    <h3><i class="fas fa-phone"></i> phone </h3>
-                    <p>9827454438</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-</div>
-
-<!-- content section ends -->
-
-<!-- theme toggler  -->
-
-<div class="theme-toggler">
-    <span style="background:linear-gradient(#F96167,  #FCE77D)"></span>
-    <span style="background: linear-gradient(lightgreen, crimson);"></span>
-    <span style="background:linear-gradient( #408EC6, #7A2048, #1E2761)"></span>
-    
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-
-<script>
-
-    var type = new Typed('.typing-text',{
-        strings : [ 'web designer', 'front end developer', 'creative engineering student', 'photographer' ],
-        typeSpeed: 120,
-        loop:true
-    });
-    /*theme toggler is basically a package that Allows the user to define both the UI and Syntax theme for both light and dark.*/
-    let themeColor = document.querySelectorAll('.theme-toggler span');
-    themeColor.forEach(color => color.addEventListener('click', () =>{
-        let background = color.style.background;
-        document.querySelector('body').style.background = background;
-    }));
-
-</script>
-
-<!-- type.js cdn link  -->
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
