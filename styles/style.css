@@ -782,10 +782,15 @@ h4.stat-titile {
 }
 .footer p{
     text-align: center;
+    color:var(--color-grey-2);
+}
+p.foot-1 {
+    padding-top: 10px;
 }
 .footer{
-    height: 60px;
+    height: 45px;
     background-color: var(--color-grey-4);
+    margin-bottom: 0;
 }
 
 
