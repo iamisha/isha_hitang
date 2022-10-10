@@ -131,6 +131,9 @@
     .control{
         margin: 1rem .6rem;
     }
+    .footer{
+        background-color: var(--color-black);
+    }
 }
 
 @media screen and (max-width:1432px){
