@@ -782,11 +782,11 @@ h4.stat-titile {
 }
 .footer p{
     text-align: center;
-    color:var(--color-grey-2);
-    font-size: x-small;
 }
 p.foot-1 {
     padding-top: 10px;
+    color: var(--color-grey-2);
+    font-size: x-small;
 }
 .footer{
     height: 45px;
