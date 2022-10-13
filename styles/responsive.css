@@ -108,6 +108,7 @@
         .timeline{
             grid-template-columns: repeat(1, 1fr);
         }
+
     }
 
     @media screen and (max-width:660px){
@@ -124,12 +125,7 @@
         .main-title h2{
             font-size: 40px;
         }
-        .theme-btn{
-            width: 50px;
-            height: 50px;
-            margin-top: 800px;
-        }
-    
+
         header{
     
             padding: 0;
@@ -241,6 +237,9 @@
         .control{
             margin: 1rem .6rem;
         }
+        .theme-btn{
+            top: 16%;
+        }
     }
     @media screen and (max-width: 600px){
 
@@ -257,12 +256,7 @@
         .main-title h2{
             font-size: 40px;
         }
-        .theme-btn{
-            
-            width: 50px;
-            height: 50px;
-            margin-top: 800px;
-        }
+
     
         header{
     
@@ -385,7 +379,7 @@
         ._projects {
             display: flex;
             flex-direction: column;
-            padding-right: 60px;
+            
         }
         .left-contact h4 {
             text-align: center;
