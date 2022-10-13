@@ -239,6 +239,11 @@
         }
         .theme-btn{
             top: 16%;
+            height: 45px;
+            width: 45px;
+        }
+        .theme-btn i{
+            font-size: 10px;
         }
     }
     @media screen and (max-width: 600px){
@@ -400,7 +405,13 @@
         .contacts-item p{
             font-size: x-small;
         }
+        .contact-icons .contact-icon{
+            margin-left: 0;
+            padding-right: 60px;
+        }
          .submit-button {
             margin-left: 130px;
         }
+       
+        
     }
