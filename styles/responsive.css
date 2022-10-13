@@ -384,7 +384,7 @@
         .left-contact h4 {
             text-align: center;
             margin-top: -108px;
-            color: var(--color-grey-3);
+            color: var(--color-grey-5);
         }
         .contact-info .contacts-item {
             display: flex;
@@ -393,10 +393,14 @@
         }
 
         .contacts-item .icon {
-         display: grid;
-         grid-template-columns: 20px 1fr;
-         }   
+         display: flex;
+         flex-direction: column;
+         font-size: small;
+         } 
+        .contacts-item p{
+            font-size: x-small;
+        }
          .submit-button {
-            margin-left: 140px;
+            margin-left: 130px;
         }
     }
