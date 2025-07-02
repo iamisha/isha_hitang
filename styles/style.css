@@ -22,19 +22,19 @@
 }
 
 .light-mode{
-    --color-primary: rgb(231, 230, 230);
-    --color-secondary: teal;
-    --color-white: #454e56;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #6c7983;
-    --color-grey-2: #6c7983;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #f8f8f8;
-    --color-grey-6: #12181b;
+    --color-primary: #ffffff;
+    --color-secondary: #0066cc;
+    --color-white: #2c3e50;
+    --color-black: #2c3e50;
+    --color-grey0: #f8f9fa;
+    --color-grey-1: #e9ecef;
+    --color-grey-2: #dee2e6;
+    --color-grey-3: #adb5bd;
+    --color-grey-4: #6c757d;
+    --color-grey-5: #495057;
+    --color-grey-6: #343a40;
     --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.1);
 }
 
 body {
@@ -57,6 +57,22 @@ header{
     min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
+    background: linear-gradient(135deg, var(--color-primary) 0%, rgba(25, 29, 43, 0.95) 50%, rgba(2, 97, 92, 0.1) 100%);
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(2, 97, 92, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(2, 97, 92, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+    z-index: 0;
 }
 
 section{
@@ -77,31 +93,18 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
-   
-
 }
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
-    
-
 }
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
-    
-
 }
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
-   
-}
-.sec5{
-    display: none;
-    transform: translateY(0) scale(1);
-    
-
 }
 
 .active{
@@ -117,6 +120,47 @@ section{
     100%{
         transform: translateY(0) scaleY(1)
     }
+}
+
+/* Enhanced home page styling */
+.left-header::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.4;
+    z-index: 0;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.3;
+    }
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.h-shape:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 25px 80px rgba(2, 97, 92, 0.4);
 }
 
 /*controls css starts here*/
@@ -193,17 +237,22 @@ i{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 .left-header{
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
+    padding: 3rem 2rem;
 }
 .right-header{
-    display: flex;;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 18rem;
+    padding-right: 12rem;
+    padding-left: 3rem;
 }
 h1.name{
     font-size: 35px;
@@ -218,23 +267,27 @@ h1.name{
 
 .h-shape{
     transition: all .4s ease-in-out;
-    width: 65%;
-    height: 100%;
-    background-color: var(--color-secondary); 
+    width: 45%;
+    height: 70%;
+    background: linear-gradient(135deg, var(--color-secondary), rgba(2, 97, 92, 0.8), var(--color-primary));
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    left: 5%;
+    top: 15%;
     z-index: -1;
-    clip-path: polygon(100% 0%, 52% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(2, 97, 92, 0.3);
 }
 .image {
-    border-radius: var(--br-sm-2);
-    height: 90%;
-    width: 87%;
-    margin-left: 4rem;
+    border-radius: 50%;
+    height: 45%;
+    width: 45%;
+    margin: 2rem auto;
     background-color: none;
     transition: all .4s ease-in-out;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 img{
@@ -243,12 +296,12 @@ img{
     height: 100%;
     object-fit: cover;
     transition: all .4s ease-in-out;
-    
-  
+    border: 3px solid var(--color-white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 /*header content css ends here*/
 
-/*CV Button css starst here*/
+/*CV Button css starts here*/
 .btn-con{
     display: felx;
     align-self: flex-start;
@@ -439,6 +492,9 @@ a.main-btn:hover{
 }
 .progress .c-cplus{
     width: 85%;
+}
+.progress .java{
+    width: 75%;
 }
 
 .progress-bar{
@@ -753,6 +809,19 @@ h4.stat-titile {
     align-items: right;
     justify-content: flex-start;
 }
+/*Contact form submit button*/
+.submit-button button.main-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.submit-button button.main-btn:hover {
+    background-color: var(--color-secondary);
+}
 .contact-icons .contact-icon{
     display: flex;
     margin-top: 2rem;
@@ -792,6 +861,300 @@ p.foot-1 {
     height: 45px;
     background-color: var(--color-grey-4);
     margin-bottom: 0;
+}
+
+/* Light mode specific styles */
+.light-mode header {
+    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.95) 50%, rgba(0, 102, 204, 0.05) 100%);
+}
+
+.light-mode header::before {
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(0, 102, 204, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 102, 204, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(0, 0, 0, 0.02) 0%, transparent 50%);
+}
+
+.light-mode .h-shape {
+    background: linear-gradient(135deg, var(--color-secondary), rgba(0, 102, 204, 0.8), #f8f9fa);
+    box-shadow: 0 20px 60px rgba(0, 102, 204, 0.15);
+}
+
+.light-mode .image {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.light-mode img {
+    border: 3px solid #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .left-header::before {
+    border: 2px solid var(--color-secondary);
+    opacity: 0.2;
+}
+
+.light-mode .control {
+    background-color: var(--color-grey0);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .control:hover {
+    background-color: var(--color-secondary);
+}
+
+.light-mode .theme-btn {
+    background-color: var(--color-grey0);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .main-btn {
+    background-color: var(--color-secondary);
+    color: #ffffff;
+}
+
+.light-mode .main-btn:hover {
+    background-color: #0052a3;
+}
+
+.light-mode .about-item {
+    background-color: var(--color-grey0);
+    border: 1px solid var(--color-grey-1);
+}
+
+.light-mode .timeline-item {
+    background-color: var(--color-grey0);
+    border-left: 3px solid var(--color-secondary);
+}
+
+.light-mode .blog {
+    background-color: var(--color-grey0);
+    border: 1px solid var(--color-grey-1);
+}
+
+.light-mode .form-contact input,
+.light-mode .form-contact textarea {
+    background-color: var(--color-grey0);
+    border: 1px solid var(--color-grey-2);
+    color: var(--color-white);
+}
+
+.light-mode .form-contact input:focus,
+.light-mode .form-contact textarea:focus {
+    border-color: var(--color-secondary);
+}
+
+.light-mode .contact-icon a {
+    background-color: var(--color-grey0);
+    border: 1px solid var(--color-grey-2);
+}
+
+.light-mode .contact-icon a:hover {
+    background-color: var(--color-secondary);
+    color: #ffffff;
+}
+
+.light-mode .progress {
+    background-color: var(--color-grey-1);
+}
+
+.light-mode .progress span {
+    background-color: var(--color-secondary);
+}
+
+/* Enhanced Light Mode Heading Combinations */
+.light-mode .name {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .name span {
+    background: linear-gradient(135deg, var(--color-secondary), #004d99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.light-mode .main-title h2 {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+}
+
+.light-mode .main-title span {
+    background: linear-gradient(135deg, var(--color-secondary), #0052a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.light-mode .main-title .bg-text {
+    color: #e9ecef;
+    opacity: 0.15;
+}
+
+.light-mode .left-about h4 {
+    color: #2c3e50;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.light-mode .left-about h4::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--color-secondary), #004d99);
+    border-radius: 2px;
+}
+
+.light-mode .stat-titile {
+    color: #2c3e50;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.light-mode .stat-titile::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--color-secondary), #004d99);
+    border-radius: 2px;
+}
+
+.light-mode .timeline h5 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.light-mode .timeline span {
+    background: linear-gradient(135deg, var(--color-secondary), #004d99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 500;
+}
+
+.light-mode .blog-text h4 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.light-mode .blog-text h4::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--color-secondary);
+    border-radius: 1px;
+}
+
+.light-mode .left-contact h4 {
+    color: #2c3e50;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.light-mode .left-contact h4::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--color-secondary), #004d99);
+    border-radius: 2px;
+}
+
+.light-mode .prog-title {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.light-mode .prog-text {
+    background: linear-gradient(135deg, var(--color-secondary), #004d99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.light-mode .large-text {
+    background: linear-gradient(135deg, var(--color-secondary), #004d99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.light-mode .small-text {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.light-mode .timeline-duration {
+    background: linear-gradient(135deg, var(--color-secondary), #004d99);
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Enhanced paragraph text for light mode */
+.light-mode p {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+.light-mode .left-about p {
+    color: #495057;
+    line-height: 1.8;
+}
+
+.light-mode .right-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.light-mode .timeline p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.light-mode .blog-text p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.light-mode .left-contact p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.light-mode .contacts-item p {
+    color: #495057;
+    font-weight: 500;
 }
 
 
